@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main(putschallenge) {
+    puts("Hello, world!");
+    return 0;
+}
