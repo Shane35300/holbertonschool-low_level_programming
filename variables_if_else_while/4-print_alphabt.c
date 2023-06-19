@@ -6,24 +6,15 @@
 */
 int main(void)
 {
-	char lettrea = 'a';
-	char lettref = 'f';
-	char lettrer = 'r';
+	char lettre = 'a';
 
-	while (lettrea <= 'd')
+	while (lettre <= 'z')
 	{
-			putchar(lettrea);
-			lettrea++;
-	}
-	while (lettref <= 'p')
-	{
-		putchar(lettref);
-		lettref++;
-	}
-	while (lettrer <= 'z')
-	{
-		putchar(lettrer);
-		lettrer++;
+		if (lettre != 'e' && lettre != 'q')
+		{
+			putchar(lettre);
+		}
+		lettre++;
 	}
 	putchar('\n');
 	return (0);
