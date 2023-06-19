@@ -2,9 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - function main
-* return - return to 0
+* main - Entry point
+* Decription - blablabla
+* Return: 0
 */
+
 int main(void)
 {
 	int n;
