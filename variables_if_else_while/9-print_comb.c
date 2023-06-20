@@ -9,7 +9,6 @@ int main(void)
 	int nb;
 	int space = 32;
 	int comma = 44;
-	int dollar = 36;
 
 	for (nb = 0 ; nb < 10 ; nb++)
 	{
