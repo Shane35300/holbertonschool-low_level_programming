@@ -2,10 +2,9 @@
 
 /**
  * main - main function
- * Return: On success 1.
+ * print_alphabet - print the alphabet
  */
-int main(void)
-/* putchar means putchar*/
+void print_alphabet(void)
 {
 	char lettre = 'a';
 
@@ -15,5 +14,4 @@ int main(void)
 		lettre++;
 	}
 	_putchar('\n');
-	return (0);
 }
