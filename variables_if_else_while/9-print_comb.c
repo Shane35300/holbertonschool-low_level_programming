@@ -13,16 +13,11 @@ int main(void)
 
 	for (nb = 0 ; nb < 10 ; nb++)
 	{
+		putchar('0' + nb);
 		if (nb < 9)
 		{
-		putchar('0' + nb);
-		putchar(comma);
-		putchar(space);
-		}
-		else
-		{
-			putchar('9');
-			putchar(dollar);
+			putchar(comma);
+			putchar(space);
 		}
 	}
 	putchar('\n');
