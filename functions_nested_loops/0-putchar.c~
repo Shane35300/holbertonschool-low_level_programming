@@ -1,0 +1,12 @@
+#include <stdio.h>
+/**
+ * main - Main function
+ * Return: return 0
+ * printf - print a text
+ */
+
+int main(void);
+{
+	printf("_putchar\n");
+	return (0);
+}
