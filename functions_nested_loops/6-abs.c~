@@ -1,0 +1,21 @@
+#include "main.h"
+
+/**
+ * _abs - printsign function
+ * Description: print the sign of a number
+ * Return: return
+ *@n: variable n
+ */
+int _abs(int n)
+{
+	int va;
+
+	if (n < 0)
+	{
+		return (n * -1);
+	}
+	else
+	{
+		return (n);
+	}
+}
