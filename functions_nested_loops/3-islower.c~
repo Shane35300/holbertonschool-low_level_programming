@@ -1,0 +1,20 @@
+#include "main.h"
+
+/**
+ * _islower - islower function
+ * Description: check lowercases
+ * Return: return to 1 or 0
+ *@c: variable c
+ */
+int _islower(int c)
+{
+
+	if ('a'<=c && c<='z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
