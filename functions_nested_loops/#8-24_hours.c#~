@@ -1,0 +1,37 @@
+#include "main.h"
+
+/**
+ * print_last_digit - print last digit function
+ * Description: print last digit of a number
+ * Return: return = last digit
+ *@number: variable nbe
+ */
+int print_last_digit(int number)
+{
+	int m = 0;
+	int M = 0;
+	int h = 0;
+	int H = 0;
+
+	while(H <= 2)
+	{
+		while(h <= 9)
+		{
+			while(M < 6)
+			{
+				while(m < 10)
+				{
+					_putchar(H);
+					_putchar(h);
+					_putchar(':');
+					_putchar(M);
+					_putchar(m);
+					_putchar('\n');
+					m++;
+				}
+				M++;
+			}
+			h++;
+		}
+		H++;
+	}
