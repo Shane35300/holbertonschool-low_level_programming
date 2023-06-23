@@ -3,6 +3,7 @@
 /**
  * print_line - print nbre function
  * Description: draws a straight line in the terminal
+ * @n: fonction n
  */
 void print_line(int n)
 {
