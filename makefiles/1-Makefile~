@@ -1,0 +1,2 @@
+all:school.c
+	CC main.c SRC -o school
