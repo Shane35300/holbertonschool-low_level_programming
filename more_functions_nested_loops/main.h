@@ -1,2 +1,2 @@
 int _putchar(int putchar);
-void print_line(int n);
+void print_diagonal(int n);
