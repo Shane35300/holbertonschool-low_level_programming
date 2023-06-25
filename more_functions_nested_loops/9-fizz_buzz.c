@@ -9,7 +9,7 @@ int main(void)
 {
 	int n;
 
-	for (n = 1 ; n <= 100 ; n++)
+	for (n = 1 ; n <= 99 ; n++)
 	{
 		char fizz[] = "Fizz";
 		char buzz[] = "Buzz";
@@ -32,6 +32,6 @@ int main(void)
 			printf("%d ", n);
 		}
 	}
-	printf("\n");
+	printf("FizzBuzz\n");
 	return (0);
 }
