@@ -1,2 +1,2 @@
-void print_rev(char *s);
+void puts2(char *str);
 int _putchar(int putchar);
