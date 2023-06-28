@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * _strcat - concatenate strings
+ * _strncat - concatenate strings
  * Description : concatenate
  * @dest: a pointer
  * @src: another pointer
+ * @n: variable
  * Return: return dest
  */
-char *_strncat(char *dest, char *src, int n)
+char* _strncat(char* dest, const char* src, int n)
 {
 	char *ptr = dest;
 
@@ -14,11 +15,11 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		ptr++;
 	}
-	while (*src <= src[n - 1])
+	while (*src != '\0' && n > 0)
 	{
-		*ptr = *src;
-		ptr++;
-		src++;
+		*ptr++ = *src++;
+		n--;
 	}
 	*ptr = '\0';
-	return (dest);
+	return dest;
+}
