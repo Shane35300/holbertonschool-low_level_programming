@@ -4,6 +4,8 @@
  * Description : copy src to dest
  *@dest: a pointer/
  *@src: integer
+ *
+ * Return: return a pointer to the destination string
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -13,5 +15,5 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[nb] = src[nb];
 	}
-	return (dest)
+	return (dest);
 }
