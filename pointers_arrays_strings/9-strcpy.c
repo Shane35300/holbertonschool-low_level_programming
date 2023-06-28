@@ -10,8 +10,13 @@
 char *_strcpy(char *dest, char *src)
 {
 	int nb;
+	int nombre;
 
-	for (nb = 0 ; src[nb] != '\0' ; nb++)
+	while (src[nombre] != '\0')
+	{
+		nombre++;
+	}
+	for (nb = 0 ; src[nb] != src[nombre] ; nb++)
 	{
 		dest[nb] = src[nb];
 	}
