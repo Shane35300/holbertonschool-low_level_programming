@@ -11,9 +11,16 @@ void print_array(int *a, int n)
 	int nb = 0;
 
 
-	for (nb = 0 ; nb <= (n -1) ; nb++)
+	for (nb = 0 ; nb <= (n - 1) ; nb++)
 	{
-		printf("%d, ", a[nb]);
+		if (nb == (n - 1))
+		{
+			printf("%d", a[nb]);
+		}
+		else
+		{
+			printf("%d, ", a[nb]);
+		}
 	}
 	printf("\n");
 }
