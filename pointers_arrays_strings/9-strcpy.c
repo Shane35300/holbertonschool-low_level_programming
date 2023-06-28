@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _strcpy - copy
  * Description : copy src to dest
@@ -8,4 +7,11 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	
+	int nb;
+
+	for (nb = 0 ; src[nb] != '\0' ; nb++)
+	{
+		dest[nb] = src[nb];
+	}
+	return (dest)
+}
