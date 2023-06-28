@@ -6,19 +6,18 @@
  */
 void rev_string(char *s)
 {
-	int nombre;
-	int nb;
+	int nombre = 0;
+	int nb = 0;
 	char temp;
-	int nbb = (nombre - 2 - nb);
 
-	while (s[nombre] < '\0')
-	{
+	 while (s[nombre] != '\0')
+	 {
 		nombre++;
-	}
-	for (nb = 0 ; nb <= (nombre / 2) ; nb++)
-	{
-		temp = nb;
-		nb = nbb;
-		nbb = temp;
-	}
+	 }
+	 for (nb = 0 ; nb < (nombre / 2) ; nb++)
+	 {
+		temp = s[nb];
+		s[nb] = s[nombre - nb - 1];
+		s[nombre - nb - 1] = temp;
+	 }
 }
