@@ -7,7 +7,7 @@
  * @n: variable
  * Return: return dest
  */
-char* _strncat(char* dest, const char* src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *ptr = dest;
 
@@ -21,5 +21,5 @@ char* _strncat(char* dest, const char* src, int n)
 		n--;
 	}
 	*ptr = '\0';
-	return dest;
+	return (dest);
 }
