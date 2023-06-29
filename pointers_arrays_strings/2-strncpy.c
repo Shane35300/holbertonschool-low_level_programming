@@ -2,23 +2,24 @@
 /**
  * _strncpy - strncpy
  * Description: work exactly like strncpy
-
- @dest: dest
+ *@dest: dest
  *@src: src
  *@n: n
- * Return:
+ * Return: return
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
-	char *ptr = src;
-	char **pptr = ptr;
+	int number = 0;
 
-	while ( *ptr != '\0' && n > 0)
+	while (number < n && src[number] != '\0')
 	{
-		*dest = **pptr;
-		dest++;
-		src++;
-		n--;
+		dest[number] = src[number];
+		number++;
 	}
+	while (number < n)
+	{
+		dest[number] = '\0';
+		number++;
+	}
+	return (dest);
 }
