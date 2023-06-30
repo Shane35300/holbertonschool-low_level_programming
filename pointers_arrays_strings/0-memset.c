@@ -1,18 +1,20 @@
 #include "main.h"
 /**
-* cap_string - capitalize
-* Description : capitalizes all words of a string
-* @str: a pointer/
+* _memset - memset
+* Description : fills memory with a constant byte.
+* @s: a pointer/
+* @b: var
+* @n: int
 * Return: return
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int nb = 0;
+	unsigned int nb = 0;
 
 	while (nb < n)
 	{
 		s[nb] = b;
 		nb++;
 	}
-	return (*s);
+	return (s);
 }
