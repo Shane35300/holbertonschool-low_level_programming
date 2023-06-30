@@ -28,6 +28,7 @@ char *cap_string(char *str)
 		{
 			str[nb + 1] = toupper(str[nb + 1]);
 		}
+		str[0] = toupper(str[0]);
 		nb++;
 	}
 	return (str);
