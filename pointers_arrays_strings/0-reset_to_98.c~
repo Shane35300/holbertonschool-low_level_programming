@@ -6,9 +6,3 @@
  * @n: pointer
  */
 void reset_to_98(int *n)
-{
-	int *ptr = 98
-	int *ptr = &n;
-
-	updateValue(ptr);
-}
