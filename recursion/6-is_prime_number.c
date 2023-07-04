@@ -1,17 +1,20 @@
 #include "main.h"
 /**
- * is_prime_number - fonction name
+ * _sqrt_recursion - fonction name
  * Description: print a string
- * @n: string
+ * @n: power
  * Return: return lenght
 */
-int is_prime_number(int n)
+int _sqrt_recursion(int n, int i)
 {
-	int i = n;
-
-	if (i % n == 0)
+	if (n == i * i && i % 2 == 0)
 	{
-		return (i % n);
+		return (i);
 	}
-	return (is_prime_number(n - 1));
+	else if (i == 0)
+	{
+		return (-1);
+	}
+	else
+	return (n * _pow_recursion(n, i - 1));
 }
