@@ -1,1 +1,1 @@
-void print_diagsums(int *a, int size);
+int _atoi(char *s);
