@@ -9,17 +9,11 @@
 */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *ptr;
+	void *ptr = malloc(b);
 
-	if (b <= 0)
-	return;
-
-	ptr = (unsigned int *)malloc(sizeof(unsigned int) * b);
-
-	if (ptr == NULL)*
+	if (ptr == NULL)
 	{
-		return (98);
+		exit(98);
 	}
-	free (ptr);
-	return;
+	return (ptr);
 }
