@@ -26,8 +26,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		ptr[i] = malloc(sizeof(unsigned int) * size);
 
 		if (ptr[i] == NULL)
-		return (NULL);
-
+		{
+			for (j = 0 ; j < i ; j++)
+			{
+				free(ptr[j]);
+			}
+			free(ptr);
+			return (NULL);
+		}
 		for (j = 0 ; j < size ; j++)
 		{
 			ptr[i][j] = 0;
