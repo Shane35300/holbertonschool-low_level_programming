@@ -1,2 +1,3 @@
-#define SIZE (1024)
-int main(void);
+#ifndef SIZE
+#define SIZE 1024
+#endif
