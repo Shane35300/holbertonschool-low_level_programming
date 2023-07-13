@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void *_calloc(unsigned int, unsigned int);
+int *array_range(int, int);
 
 /**
  * simple_print_buffer - prints buffer in hexa
@@ -40,16 +40,14 @@ void simple_print_buffer(int *buffer, unsigned int size)
 int main(void)
 {
 	int *a;
-	unsigned int nmemb;
 
-	nmemb = 50;
-	a = _calloc(nmemb, sizeof(*a));
+	a = array_range(4096, 4096);
 	if (a == NULL)
 	{
 		printf("Failed\n");
 		return (1);
 	}
-	simple_print_buffer(a, nmemb);
+	simple_print_buffer(a, 1);
 	free(a);
 	return (0);
 }
