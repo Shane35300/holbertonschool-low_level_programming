@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
  * init_dog - fonction
@@ -11,7 +12,23 @@
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	strcpy(d->name, "Poppy");
-	d->age = 3.5;
-	strcpy(d->owner, "Bob");
+	d->name = (char *)malloc(strlen(name) + 1);
+
+	if (d->name == NULL)
+	{
+		free(d->name);
+		return;
+	}
+	strcpy(d->name, name);
+
+	d->age = age;
+
+	d->owner = (char *)malloc(strlen(owner) + 1);
+
+	if (d->owner == NULL)
+	{
+		free(d->owner);
+		return;
+	}
+	strcpy(d->owner, owner);
 }
