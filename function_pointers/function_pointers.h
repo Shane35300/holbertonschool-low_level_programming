@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef FUNCTIONP
+#define FUNCTIONP
 void print_name(char *name, void (*f)(char *));
 
-#endif /* MAIN_H */
+#endif /* FUNCTIONP */
