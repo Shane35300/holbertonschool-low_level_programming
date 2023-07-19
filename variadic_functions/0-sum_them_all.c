@@ -20,10 +20,6 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 	return (0);
 
-
-
-
-
 	for (i = 0 ; i < (int)n ; i++)
 	{
 		nombre = va_arg(variable, int);
