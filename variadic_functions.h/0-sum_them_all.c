@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "main.h"
+#include "variadic_function.h"
 
 /**
  * sum_them_all - sum
@@ -15,6 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	int total = 0;
 	va_list variable;
+
 	va_start(variable, n);
 	int i, nombre;
 
