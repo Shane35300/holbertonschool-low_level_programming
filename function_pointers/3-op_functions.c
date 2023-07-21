@@ -22,9 +22,6 @@ int op_add(int a, int b)
 */
 int op_sub(int a, int b)
 {
-	if ((a - b) < 0)
-	return (-(a - b));
-
 	return (a - b);
 }
 /**
