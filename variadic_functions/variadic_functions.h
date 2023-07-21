@@ -1,23 +1,18 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
+#include <stdarg.h>
 /**
  * struct print - Struct print
  *
- * @c: char
- * @i: integers
- * @f: float
- * @s: strings
+ * @str: string
+ * @f: function pointer
  * Definition: definition
  */
-typedef struct choice
+typedef struct print
 {
-char *op;
-int (*f)(const char * const format, ...);
+char *str;
+void (*f)(va_list args);
 } op_t;
 
-
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
-void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 #endif /* VARIADIC_FUNCTIONS_H */
