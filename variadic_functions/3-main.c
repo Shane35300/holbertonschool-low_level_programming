@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include "ex.h"
 
 /**
  * main - check the code

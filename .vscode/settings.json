@@ -1,5 +1,8 @@
 {
 	"files.associations": {
-		"copie": "c"
-	}
+		"copie": "c",
+		"ex.h": "c",
+		"print_integer": "c"
+	},
+	"C_Cpp.errorSquiggles": "disabled"
 }

@@ -1,0 +1,34 @@
+void _printf(const char * format, ...)
+{
+elem_t array = {
+    {"c", character},
+    {"s", strings},
+};
+va_list list;
+int i = 0, j;
+va_start(list, format);
+while (format[i])
+{
+    j = 0;
+    while (j < 4)
+    {
+        if (format[i] == '%' && format[i + 1] == array[j].element)
+        {
+            array[j].f(list);
+            i++;
+            _putchar(format[i]);
+            _putchar(',');
+            _putchar(' ');
+        }
+        j++;
+    }
+    i++;
+}
+va_end(list);
+_putchar('\n');
+}
+int main(void)
+{
+    strings("ma mission est %s et %d.");
+    return (0);
+}

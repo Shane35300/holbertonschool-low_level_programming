@@ -1,0 +1,43 @@
+#include "main.h"
+#include <stdarg.h>
+#include <unistd.h>
+/**
+* unsigned_decimal - Print unsigned decimal
+* @list: va_list argument
+* Return: Print unsigned decimal
+*/
+void unsigned_decimal(va_list list)
+{
+    unsigned int u = va_arg(list, unsigned int);
+    _putchar(u);
+}
+/**
+* unsigned_octal - Print octal
+* @list: va_list argument
+* Return: Print octal
+*/
+void unsigned_octal(va_list list)
+{
+    unsigned int o = va_arg(list, unsigned int);
+    _putchar(o);
+}
+/**
+* unsigned_hexadecimal - Print unsigned hexadecimal
+* @list: va_list argument
+* Return: Print unsigned hexadecimal
+*/
+void unsigned_hexadecimal(va_list list)
+{
+    unsigned int x = va_arg(list, unsigned int);
+    _putchar(x);
+}
+/**
+* pointer_address - Print pointer adress
+* @list: va_list argument
+* Return: Print pointer adress
+*/
+void pointer_address(va_list list)
+{
+    void *p = va_arg(list, void *);
+    _putchar(p);
+}
