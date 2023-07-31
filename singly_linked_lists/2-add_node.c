@@ -18,8 +18,6 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (newNode == NULL)
 	{
-		printf("malloc a échoué");
-		free(newNode);
 		return (NULL);
 	}
 

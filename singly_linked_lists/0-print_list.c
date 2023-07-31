@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
 /**
  * print_list - affiche une liste
  * Description: fonction ayant pour but d'afficher une liste
@@ -23,6 +24,7 @@ size_t print_list(const list_t *h)
 		temp = temp->next;
 		count++;
 	}
+	
 
 	return (count);
 }
