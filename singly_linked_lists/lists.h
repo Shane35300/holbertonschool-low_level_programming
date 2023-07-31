@@ -2,13 +2,13 @@
 #define LISTS_H
 /**
  * struct list_s - name of the structure
- * @string: string
+ * @str: string
  * @len: value
  * @next: next node
 */
 typedef struct list_s
 {
-	char *string;
+	char *str;
 	unsigned int len;
 	struct list_s *next;
 } list_t;
