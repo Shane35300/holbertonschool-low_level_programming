@@ -24,12 +24,12 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 		ptr->next = NULL;
 		*head = ptr;
-		return (*head);
 	}
 	else
 	{
 		ptr->next = *head;
+		(*head)->prev = ptr;
 		*head = ptr;
 	}
-	return (*head);
+	return (ptr);
 }
