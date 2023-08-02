@@ -21,15 +21,12 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	while (i < index)
 	{
+		if (ptr == NULL)
+		{
+			return (NULL);
+		}
 		ptr = ptr->next;
 		i++;
 	}
-	if (ptr == NULL)
-	{
-		printf("(nil)");
-		return (NULL);
-	}
-
-	else
 	return (ptr);
 }
