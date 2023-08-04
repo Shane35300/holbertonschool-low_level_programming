@@ -2,7 +2,8 @@
 	"files.associations": {
 		"copie": "c",
 		"ex.h": "c",
-		"print_integer": "c"
+		"print_integer": "c",
+		"copie task 0": "c"
 	},
 	"C_Cpp.errorSquiggles": "disabled"
 }
