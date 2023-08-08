@@ -36,16 +36,17 @@ int main(int argc, char *argv[])
 	}
 	while ((octets_lus = read(fd_source, buffer, 1024)) > 0)
 	{
-		octets_ecrits = write(fd_destination, buffer, octets_lus);
-		if (octets_ecrits == -1)
-		{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
-		}
 		if (octets_lus == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
+		}
+		octets_ecrits = write(fd_destination, buffer, octets_lus);
+
+		if (octets_ecrits == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
 		}
 	}
 	if (close(fd_source) == -1 || close(fd_destination) == -1)
