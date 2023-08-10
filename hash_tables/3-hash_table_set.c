@@ -40,6 +40,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 		{
+			while (current_node != NULL)
+			{
+				if (strcmp(key, current_node->key) == 0)
+				{
+					current_node->value = strdup(value);
+					return (1);
+				}
+				current_node = current_node->next;
+			}
+			current_node = ht->array[index];
 			new_node->next = current_node;
 			ht->array[index] = new_node;
 		}
